@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> Add Book </title>
+<meta charset="utf-8">
+<meta name="description" content="Book Reviews Website" />
+<meta name="keywords" content="Books,top 10 best Books,Books Website,Books Reviews,best Book Reviews Website"/>
+<meta name="author" content="Wael Ahmad Alghamdi" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="../css/styles.css"> </link>
+<script type="text/javascript" src="../scripts/script.js"></script>
+</head>
+<body>
+       <header>
+
+        <h1> SKS-Books </h1>
+    
+       </header>        
+      
+            <ul <div class="main_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="add_book.html">Add Book</a></li>
+                <li><a href="add_review_for_a_book.html">Add Review For a Book</a></li>
+              </div> 
+            </ul>
+
+       <div id="title">
+
+
+     <h1> Add Book </h1>
+
+     </div> 
+
+     <br/>
+     <hr/>
+     <br/>
+              
+
+
+            <div id="container">
+        <div id="regform">
+          <h1> Add Book Form </h1>
+          <hr />
+          <div>
+            <form action="process" method="post" onsubmit="return validateAddBook();">
+              <div class="item"> <label> <div class="lbl"> Book Name: *   
+                                             <span class="error" id="errBooknameadd"> </span>
+                                         </div>  <input id="booknameadd" class="inputBox" type="text" name="booknameadd" placeholder="Enter your book name..." /> </label> 
+              </div>
+              <div class="item"> <label> <div class="lbl"> Author: *  
+                                             <span class="error" id="errAuthor"> </span>
+                                         </div>  <input id="author" class="inputBox" type="text" name="author" placeholder="Enter the book author..." /> </label> 
+              </div>
+              <div class="item"> <label> <div class="lbl"> ISBN: *   
+                                             <span class="error" id="errISBN"> </span>
+                                         </div>  <input id="isbn" class="inputBox" type="text" name="isbn" placeholder="Enter the book ISBN..." /> </label> 
+              </div>
+               <div class="item"> <label> <div class="lbl"> Publisher: *   
+                                             <span class="error" id="errPublisher"> </span>
+                                         </div>  <input id="publisher" class="inputBox" type="text" name="publisher" placeholder="Enter the book publisher..." /> </label> 
+              </div>
+              <div class="item"> <label> <div class="lbl"> Language: *   
+                                            <span class="error" id="errLanguage"> </span>
+                                         </div>  
+                            <select id="language" class="inputBox" name="language">
+                              <option>Please select the book language...</option>
+                              <option> Arabic </option>
+                              <option> English </option>
+                              <option> French </option>
+                              <option> Italian </option>
+                            </select>
+                    </label>
+              </div>
+              <div class="item"> <label> <div class="lbl"> Category: *   
+                                            <span class="error" id="errCategory"> </span>
+                                         </div>  
+                            <select id="category" class="inputBox" name="category">
+                              <option>Please select the book category...</option>
+                              <option> Arts </option>
+                              <option> Cooking </option>
+                              <option> Science </option>
+                              <option> Children </option>
+                              <option> Computers & Tech </option>
+                            </select>
+                    </label>
+              </div>
+               <div class="item"> <label> <div class="lbl"> Edition:  
+                                             <span class="error" id="errEditionadd"> </span>
+                                         </div>  <input id="editionadd" class="inputBox" type="text" name="editionadd" placeholder="Enter the book edition..." /> </label> 
+              </div>
+               <div class="item"> <label> <div class="lbl"> Year: *  
+                                             <span class="error" id="errYear"> </span>
+                                         </div>  <input id="year" class="inputBox" type="text" name="year" placeholder="Enter the book year..." /> </label> 
+              </div>
+              <div class="item"> <label> <div class="lbl"> Number Of Pages: *  
+                                             <span class="error" id="errNumberofpages"> </span>
+                                         </div>  <input id="numberofpages" class="inputBox" type="text" name="numberofpages" placeholder="Enter number of book pages..." /> </label> 
+              </div>
+              <div class="item"><div class="lbl"> Book Description: *               
+                 <span class="error" id="errBookdescription"> </span>
+             </div> <textarea id="bookdescription" rows="15" cols="100" class="inputBoxArea" name="bookdescription"></textarea>
+              </div>
+
+              <div class="item"> <input id="submitBtn" type="submit" value="Add" /> </div>
+              
+</form>
+          </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="../scripts/script.js"></script>
+<footer>
+        <div class="footer-content">
+            <h3>SKS-BOOKS</h3>
+           <h2><a href="https://goo.gl/maps/6KApSw4M4Gr7M72q7">location</a> </h2>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright 2021 © THRIFTBOOKS </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
